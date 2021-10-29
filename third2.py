@@ -2,7 +2,9 @@ import time
 from selenium import webdriver
 
 
-driver = webdriver.Chrome(executable_path=r"C:\Users\tejas\Desktop\pytest_sample\Test\chromedriver.exe")
+driver = webdriver.Chrome(
+    executable_path=r"C:\Users\tejas\Desktop\pytest_sample\Test\chromedriver.exe"
+)
 driver.get(r"file:C:\Users\tejas\Desktop\pytest_sample\Test\class_mods\third2.html")
 time.sleep(3)
 #find_element_by_tag_name("button") will give the button element over which cilck() 
